@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/Iamnehapawar/student-app-repo.git'
+                git branch: 'main', url: 'https://github.com/Iamnehapawar/student-app-repo.git', credentialsId: 'github-token'
             }
         }
 
